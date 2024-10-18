@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #545252; /* 배경을 검은색으로 변경 */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 10px solid #000; /* 테두리를 회색으로 변경 */
+    transition: background-image 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 우측 상단에 체크박스 배치 */
+.toggle-gif {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.description {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* 투명 배경 추가 */
+    border-radius: 10px;
+    margin-top: -50px;
+}
+
+.description p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.cta-button:hover {
+    background-color: #e6b800;
+}
+
+/* Flexbox for the features section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+footer {
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Media query to handle small screen sizes */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* 화면이 작아질 때 가로에서 세로로 변경 */
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 20px; /* 세로 간격 추가 */
+    }
+}
